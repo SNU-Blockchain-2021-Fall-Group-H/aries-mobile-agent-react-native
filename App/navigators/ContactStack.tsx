@@ -15,6 +15,8 @@ export type ContactStackParams = {
 const Stack = createStackNavigator<ContactStackParams>()
 
 function ContactStack() {
+  const [ searchQuery, setSearchQuery ] = useState('')
+
   return (
     <Stack.Navigator screenOptions={{ ...defaultStackOptions, headerShown: false }}>
       <Stack.Screen name="Contacts" component={ListContacts} />
