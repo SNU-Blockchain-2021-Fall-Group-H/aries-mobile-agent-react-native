@@ -71,60 +71,6 @@ const ListContacts: React.FC = () => {
     })
   }, [])
 
-  const mockContacts = [
-    {
-      id: '1',
-      alias: 'Burger King',
-      // address: 'Seoul',
-      // phone: '02-1234-1234',
-      invitation: {
-        label: 'BurgerKing',
-      },
-      did: '1',
-    },
-    {
-      id: '2',
-      alias: 'Lotteria',
-      // address: 'Seoul',
-      // phone: '02-4321-4321',
-      invitation: {
-        label: 'BurgerKing',
-      },
-      did: '2',
-    },
-    {
-      id: '3',
-      alias: 'McDonalds',
-      // address: 'Seoul',
-      // phone: '02-1212-3434',
-      invitation: {
-        label: 'BurgerKing',
-      },
-      did: '3',
-    },
-  ]
-
-  const [mockData, setMockData] = useState<any[]>(mockContacts)
-  console.log(mockData)
-
-  useEffect(() => {
-    connections.map((it) => {
-      setMockData([
-        ...mockData,
-        {
-          id: it.id,
-          alias: it.alias,
-          did: it.did,
-          invitation: {
-            label: it.invitation?.label,
-          },
-        },
-      ])
-    })
-  }, [])
-
-  console.log(mockData)
-
   return (
     <SafeAreaView>
       <TextInput

@@ -41,11 +41,7 @@ const translation = {
     "CreatedAt": "Created At:"
   },
   "Home": {
-<<<<<<< HEAD
     "Notifications": "Received Coupons",
-=======
-    "Notifications": "Recent Coupons",
->>>>>>> 928d881d50d2f53eca558ea2808a875a60cd2731
     "NoNewUpdates": "No New Updates"
   },
   "Scan":{
